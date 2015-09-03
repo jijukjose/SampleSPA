@@ -1,0 +1,47 @@
+
+<div class="container-fluid">
+    <form name="profileForm">
+        <div class="row-fluid">
+            <div class="span3">
+                <!--<gravatar email="{{user.emailAddress}}"/>-->
+            </div>
+            <div class="span3">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="Name" ng-model="user.name" />
+                    <!--<custom-input-field id="name" name="Name:" type="text" display="Name" model="user.name"></custom-input-field>-->
+                    <label for="emailAddress">Email Address:</label>
+                    <input id="emailAddress" type="email" placeholder="Email Address" ng-model="user.emailAddress" />
+                    <label for="age">Age</label>
+                    <input id="age" type="text" placeholder="Age" ng-model="user.age" />
+                    <label for="gender">Gender</label>
+                    <select name="cmbitems" id="gender" ng-model="user.gender">
+                        <option selected value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input id="phonenumber" type="text" placeholder="Phone number in Norway" ng-model="user.phonenumber"/>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <div class="row-fluid">
+            <div class="span6 offset3">
+                <div class="pull-right">
+                    <a href="#/workInfo">
+                        <button type="submit" class="btn btn-primary" data-ng-click="select(2)">Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+

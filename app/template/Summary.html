@@ -1,0 +1,66 @@
+</br>
+</br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="big-box">
+                <h1>Personal Information</h1>
+                <p>Name: {{user.name}}</p>
+                <p>Email: {{user.emailAddress}}</p>
+                <p>Age: {{user.age}}</p>
+                <p>Gender: {{user.gender}}</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="big-box">
+                <h1>Work Information</h1>
+                <div ng-if="user.work">
+                    <p>Have taken workpermit in the past</p>
+                    </br>
+                    <p>{{user.workdetails}}</p>
+                </div>
+                <div ng-if !="user.work">
+                    <p>Have not taken workpermit in the past</p>
+                </div>
+                <h2>Type of the new job</h2>
+                {{user.stilling}}
+                <div ng-switch on="user.stilling">
+                    <div ng-switch-when="permanent">
+                        Permament
+                    </div>
+                    <div ng-switch-when="temporary">
+                        Temporary
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="big-box">
+                <h1>Travel Document history</h1>
+                <p>Passport Number: {{user.passportNumber}}</p>
+                <p>Birth Place: {{user.countryOfBirth}}</p>
+                <p>Permanent Address: {{user.passportAddress}}</p>
+                <p>Date of Birth: {{user.dob}}</p>
+            </div>
+        </div>
+
+    </div>
+<div class="pull-right">
+    <a href="#/finish">
+        <button type="submit" class="btn btn-primary" data-ng-click="select(4)">Finish</button>
+    </a>
+</div>
+
+
+
+
+
+
+
+
+

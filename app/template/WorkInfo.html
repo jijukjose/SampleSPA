@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <form name="profileForm">
+        <div class="row-fluid">
+            <div class="span3">
+                <!--<gravatar email="{{user.emailAddress}}"/>-->
+            </div>
+            <div>
+                <fieldset>
+                    <label for="work">Have previous work permit in Norway</label>
+                    <input id="work" type="checkbox" ng-model="user.work" />
+                    <label ng-if="user.work" for="workdetails">Please enter the description of the work below in brief</label>
+                    <textarea ng-if="user.work" id="workdetails" rows="6" style="width:50%; color:#52575c" placeholder="Enter the details about your previous work permit" ng-model="user.workdetails"></textarea>
+                    <label>Type of the new job</label>
+                    <div class="radio">
+                        <label><input type="radio" name="stilling" id="stilling1" value="permament" ng-model="user.stilling">Permanent</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="stilling" id="stilling2"  value="temporary" ng-model="user.stilling">Temporary</label>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span6 offset3">
+                <div class="pull-right">
+                    <a href="#/personalInfo">
+                        <button type="submit" class="btn btn-primary" data-ng-click="select(1)">Back</button>
+                    </a>
+                    <a href="#/travelDoc">
+                        <button type="submit" class="btn btn-primary" data-ng-click="select(3)">Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
