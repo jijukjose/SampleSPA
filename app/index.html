@@ -1,57 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="eventsApp" ng-controller="ParentController">
+<html lang="en" ng-app="tidalApp" ng-controller="tidalCtrl">
 <head>
-    <meta charset="UTF-8">
-    <title>Event Registration</title>
+    <!-- TODO: Change the symbol to Tidal-->
+    <!-- TODO: Change bootstrap.css to bootstrap.min.css -->
+    <title>Tidal. High Fidelity Streaming</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
 <div class="container">
     <div class="row">
-    <div class="jumbotron">
-        <h1>Norwegian Residence Permit Registration</h1>
-        <p>Please follow the tabs for registering your residence in Norway</p>
-    </div>
-    <div class="navbar">
+        <div class="jumbotron">
+            <!--<h1>Norwegian Residence Permit Registration</h1>-->
+        </div>
+        <div class="navbar">
             <ul class="nav nav-tabs">
-                <li ng-click="select(1)" ng-class="{active: selectedIndex===1}"><a href="#/personalInfo" data-toggle="tab" >Personal Information</a></li>
-                <li ng-click="select(2)" ng-class="{active: selectedIndex===2}"><a href="#/workInfo" data-toggle="tab">Work Information</a></li>
-                <li ng-click="select(3)" ng-class="{active: selectedIndex===3}"><a href="#/travelDoc" data-toggle="tab">Travel document History</a></li>
-                <li ng-click="select(4)" ng-class="{active: selectedIndex===4}"><a href="#/summary" data-toggle="tab">Summary</a></li>
 
-                <!--<li class="disabled disabledTab"><a href="#/newEvent" data-toggle="tab">Summary</a></li>-->
             </ul>
-    </div>
+        </div>
     </div>
     <ng-view>
     </ng-view>
 </div>
 
-    <script src="/lib/jquery.min.js"></script>
-    <script src="/lib/underscore-1.4.4.min.js"></script>
-    <script src="/lib/bootstrap.min.js"></script>
-    <script src="/lib/angular/angular.js"></script>
-    <script src="/lib/angular/angular-route.min.js"></script>
-    <!--<script src="/lib/angular-1.4.3/angular-sanitize.js"></script>-->
-
-    <script src="/js/app.js"></script>
-<script src="/js/controllers/ParentController.js"></script>
-<script src="/js/controllers/PersonalInfoController.js"></script>
-<script src="/js/controllers/WorkInfoController.js"></script>
-<script src="/js/controllers/TravelDocController.js"></script>
-<script src="/js/controllers/DocsController.js"></script>
-<script src="/js/controllers/SummaryController.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/css/bootstrap.css"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/lib/angular/angular.js"></script>
+<script src="/lib/angular/angular-route.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/controllers/tidal-controller.js"></script>
 <script src="/js/directives/directives.js"></script>
-<script src="https://rawgithub.com/cletourneau/angular-bootstrap-datepicker/master/dist/angular-bootstrap-datepicker.js" charset="utf-8"></script>
 
-
-
-<script src="/lib/angular/angular-resource.js"></script>
-<!--<script src="/js/controllers/EditProfileController.js"></script>-->
-<script src="/js/services/GravatarUrlBuilder.js"></script>
-<script src="/js/directives/gravatar.js"></script>
-<script src="/js/filters.js"></script>
 
 </body>
 </html>
