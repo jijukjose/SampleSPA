@@ -3,6 +3,9 @@
 var tidalApp = angular.module('tidalApp', []);
 /*TODO: remove comment*/
 /*TODO: 'use strict' in all the files*/
+$(".btn-xl").mouseup(function(){
+    $(this).blur();
+})
 //tidalApp.config(function($routeProvider) {
 //
 //    $routeProvider.when("/personalInfo", {

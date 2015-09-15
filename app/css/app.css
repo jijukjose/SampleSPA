@@ -1,52 +1,116 @@
-/* app css stylesheet */
-.hoverwell:hover {
-  background-color: blue;
-  cursor: pointer;
-}
-select, textarea {
-  color: #52575c;
+.top-buffer { margin-top:70px; }
+
+.searchbox {
+    height:60px;
+    background-color:#2a2a2a;
+    border: 0px none !important;
+    border-radius: 3px;
+    font-size: 18px;
 }
 
-.well-title {
-  margin-top: 0px;
-}
-.session {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.searchbutton {
+
+
 }
 
-.votingWidget {
-  height: 64px;
-  padding: 7px;
+.btn-xl,.btn-xl:hover, .btn-xl:active{
+    padding: 18px 28px;
+    border-radius: 3px;
+    height:60px;
+    background: #0ff;
+    color: #151515;
+    font-size: 16px
 }
 
-.votingButton {
-  padding-left:6px;
-  cursor:pointer;
-}
-.disabledTab{
-    pointer-events: none;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus{
-    color: green !important;
-    /*background-color: red !important;*/
+.promos__item {
+    border: 1px solid;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    height: 238px;
+    background: none;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.big-box
- {
-    background-color: green;
+
+.outer {
+    background-color: #151515 !important
+
+}
+
+.searchresult{
+    font-size: 30px;
+    font-family: oblique serif !important;
     color: white;
-    text-align: center;
-    margin: 2px;
-    font-size: 1.5em;
+
 }
-.big-box {
-    height: 300px
+
+tile.tile-medium {
+
 }
+.tile.tile-teal {
+    background-color: #00aba9;
+    height: 150px !important;
+    width: 150px;
+    background: url(/img/prince.jpg) no-repeat center top;background-size:cover;
+}
+/*.row > div {*/
+    /*border: 1px solid grey;*/
+/*}*/
+
+/*TODO remove comments*/
+/* app css stylesheet */
+/*.hoverwell:hover {*/
+  /*background-color: blue;*/
+  /*cursor: pointer;*/
+/*}*/
+/*select, textarea {*/
+  /*color: #52575c;*/
+/*}*/
+
+/*.well-title {*/
+  /*margin-top: 0px;*/
+/*}*/
+/*.session {*/
+    /*-webkit-touch-callout: none;*/
+    /*-webkit-user-select: none;*/
+    /*-khtml-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+/*}*/
+
+/*.votingWidget {*/
+  /*height: 64px;*/
+  /*padding: 7px;*/
+/*}*/
+
+/*.votingButton {*/
+  /*padding-left:6px;*/
+  /*cursor:pointer;*/
+/*}*/
+/*.disabledTab{*/
+    /*pointer-events: none;*/
+/*}*/
+
+/*.nav-tabs > li.active > a,*/
+/*.nav-tabs > li.active > a:hover,*/
+/*.nav-tabs > li.active > a:focus{*/
+    /*color: green !important;*/
+    /*background-color: red !important;*/
+/*}*/
+
+/*.big-box*/
+ /*{*/
+    /*background-color: green;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*margin: 2px;*/
+    /*font-size: 1.5em;*/
+/*}*/
+/*.big-box {*/
+    /*height: 300px*/
+/*}*/

@@ -1,6 +1,7 @@
 
 tidalApp.controller('tidalCtrl', function($scope){
 
+
     $scope.select=function(index) {
         $scope.selectedIndex = index;
     }
