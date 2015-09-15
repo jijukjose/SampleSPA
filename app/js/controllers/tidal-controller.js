@@ -1,25 +1,20 @@
 
-tidalApp.controller('tidalCtrl', function($scope){
+tidalApp.controller("tidalCtrl", function($scope, $http, $q, $window) {
 
+    $scope.mySearch = "";
 
-    $scope.movies = ["Lord of the Rings",
-        "Drive",
-        "Science of Sleep",
-        "Back to the Future",
-        "Oldboy"];
+    $scope.mySearchCallback = function(params) {
+        var defer = $q.defer();
 
-    // gives another movie array on change
-    $scope.updateMovies = function(typed){
-        // MovieRetriever could be some service returning a promise
-//        $scope.newmovies = MovieRetriever.getmovies(typed);
-//        $scope.newmovies.then(function(data){
-//            $scope.movies = data;
-//
-//        });
-        $scope.movies = ["Lord of the Rings",
-            "Drive",
-            "Science of Sleep",
-            "Back to the Future",
-            "Oldboy"];
+        $http.jsonp("http://gd.geobytes.com/AutoCompleteCity?callback=JSON_CALLBACK&q=" + params.query)
+            .success(function(response) {
+                defer.resolve(response);
+            });
+
+        return defer.promise;
     };
 });
+
+function callback(response, status) {
+    console.log(status);
+};
