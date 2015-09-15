@@ -13,7 +13,7 @@ angular.module("LiveSearch", ["ng"])
             liveSearchWaitTimeout: '=?',
             liveSearchMaxResultSize: '=?',
             liveSearchMaxlength: '=?',
-            ngModel: "="
+            selectedItem: "="
         },
         template: "<input type='text' />",
         link: function (scope, element, attrs, controller) {
@@ -33,8 +33,10 @@ angular.module("LiveSearch", ["ng"])
             };
 
             scope.$watch("selectedIndex", function(newValue, oldValue) {
+
                 var item = scope.results[newValue];
                 if(item) {
+                    scope.selectedItem = item;
                     if(attrs.liveSearchSelectCallback) {
                         var value = scope.liveSearchSelectCallback.call(null, {items: scope.results, item: item});
                         element.val(value);

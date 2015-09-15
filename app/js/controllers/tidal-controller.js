@@ -1,5 +1,5 @@
 
-tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, $window) {
+tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAlbumsService) {
     $scope.albumList=[{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8},{id:9},{id:10}];
 
     $scope.mySearch = "";
@@ -12,9 +12,18 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, $window)
 //            alert(a+"_"+b);
 //        }
 //    }
-    $scope.$watch('selectedArtist',function(old,newer){
-        alert(old+"_"+newer);
-    })
+    $scope.$watch('selectedArtist',function(selectedArtist){
+
+
+    });
+
+    $scope.searchAlbumsOfSelectedArtist = function(){
+        if(angular.isDefined($scope.selectedArtist)){
+            alert("Searching albums for "+ $scope.selectedArtist);
+//            searchAlbumsService(selectedArtist);
+
+        }
+    };
 });
 
 function callback(response, status) {
