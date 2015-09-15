@@ -48,7 +48,7 @@
 
 }
 
-tile.tile-medium {
+.tile.tile-medium {
 
 }
 .tile.tile-teal {
@@ -58,6 +58,10 @@ tile.tile-medium {
     /*background: url(/img/prince.jpg) no-repeat center top;background-size:cover;*/
     background: url(/img/prince.jpg) no-repeat center top;background-size:cover;
 
+}
+.tidal-table {
+    /*width: 300px;*/
+    /*float:left;*/
 }
 /*.row > div {*/
     /*border: 1px solid grey;*/

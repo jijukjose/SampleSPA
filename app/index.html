@@ -4,15 +4,15 @@
     <!-- TODO: Change the symbol to Tidal-->
     <!-- TODO: Change bootstrap.css to bootstrap.min.css -->
     <title>Tidal. High Fidelity Streaming</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body class="outer">
 <div class="container">
 
     <div class="row top-buffer">
-        <input class="span8 searchbox" id="name" name="name" placeholder=""/>
-        <span class="offset1">
+        <input class="col-md-7 searchbox" id="name" name="name" placeholder=""/>
+        <span class="col-md-offset-2">
             <button type="button" class="btn btn-primary btn-xl">SEARCH</button>
         </span>
     </div>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="row top-buffer">
-        <div class="span2">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
@@ -29,30 +29,33 @@
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
     </div>
     <div class="row top-buffer">
-        <div class="span2">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
@@ -60,38 +63,131 @@
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
-        <div class="span2 offset1">
+        <div class="col-md-2">
             <div class="thumbnail tile tile-medium tile-teal">
                 <a href="#">
                     <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
                 </a>
             </div>
         </div>
     </div>
 
+    <div class="row top-buffer"></div>
 
+    <div class="row top-buffer">
+        <div class="col-md-2">
+            <div class="thumbnail tile tile-medium tile-teal">
+                <a href="#">
+                    <img src="/img/prince.jpg">
+                    <!--<h1>Hello</h1>-->
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+            <thead>
+            <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Time</th>
+            <th>Released</th>
 
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Planet Earth</td>
+            <td>Prince</td>
+            <td>4:34</td>
+            <td>2011</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Planet Earth</td>
+            <td>Prince</td>
+            <td>4:34</td>
+            <td>2011</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Planet Earth</td>
+            <td>Prince</td>
+            <td>4:34</td>
+            <td>2011</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <!--<div class="col-md-2">-->
+            <!--<div class="thumbnail tile tile-medium tile-teal">-->
+                <!--<a href="#">-->
+                    <!--<img src="/img/prince.jpg">-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<table class="col-md-4 table table-striped">-->
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--<th>#</th>-->
+                <!--<th>Title</th>-->
+                <!--<th>Artist</th>-->
+                <!--<th>Time</th>-->
+                <!--<th>Released</th>-->
 
-
+            <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td>1</td>-->
+                <!--<td>Planet Earth</td>-->
+                <!--<td>Prince</td>-->
+                <!--<td>4:34</td>-->
+                <!--<td>2011</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>2</td>-->
+                <!--<td>Planet Earth</td>-->
+                <!--<td>Prince</td>-->
+                <!--<td>4:34</td>-->
+                <!--<td>2011</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>3</td>-->
+                <!--<td>Planet Earth</td>-->
+                <!--<td>Prince</td>-->
+                <!--<td>4:34</td>-->
+                <!--<td>2011</td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    </div>
 </div>
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/bootstrap/dist/css/bootstrap.css"></script>
+
 <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script src="/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+<script src="/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
 <script src="/lib/angular/angular.js"></script>
 <script src="/lib/angular/angular-route.min.js"></script>
 <script src="/js/app.js"></script>
