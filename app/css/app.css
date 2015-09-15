@@ -55,7 +55,9 @@ tile.tile-medium {
     background-color: #00aba9;
     height: 150px !important;
     width: 150px;
+    /*background: url(/img/prince.jpg) no-repeat center top;background-size:cover;*/
     background: url(/img/prince.jpg) no-repeat center top;background-size:cover;
+
 }
 /*.row > div {*/
     /*border: 1px solid grey;*/
