@@ -2,16 +2,24 @@
 tidalApp.controller('tidalCtrl', function($scope){
 
 
-    $scope.select=function(index) {
-        $scope.selectedIndex = index;
-    }
-    $scope.user={};
-    $scope.datepickerOptions ={
-        format: 'yyyy-mm-dd',
-        language: 'en',
-        autoclose: true,
-        weekStart: 0
-        };
+    $scope.movies = ["Lord of the Rings",
+        "Drive",
+        "Science of Sleep",
+        "Back to the Future",
+        "Oldboy"];
 
-      $scope.date = '2000-03-12';
+    // gives another movie array on change
+    $scope.updateMovies = function(typed){
+        // MovieRetriever could be some service returning a promise
+//        $scope.newmovies = MovieRetriever.getmovies(typed);
+//        $scope.newmovies.then(function(data){
+//            $scope.movies = data;
+//
+//        });
+        $scope.movies = ["Lord of the Rings",
+            "Drive",
+            "Science of Sleep",
+            "Back to the Future",
+            "Oldboy"];
+    };
 });
