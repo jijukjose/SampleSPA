@@ -6,109 +6,31 @@
     <title>Tidal. High Fidelity Streaming</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <!--<link rel="stylesheet" href="/bower_components/auto/style/autocomplete.css">-->
-    <!--<link rel="stylesheet" href="/bower_components/auto/style/style.css">-->
 </head>
 <body class="outer">
 <div class="container" ng-controller="tidalCtrl">
 
-    <div class="row">
-        <live-search id="search1" type="text"
-                     live-search-callback="mySearchCallback"
-                     ng-model="mySearch" class="col-md-9 searchbox"></live-search>
-
-        <span class="col-md-offset-1 col-md-2">
-            <button type="button" class="btn btn-primary btn-xl">SEARCH</button>
-        </span>
+    <div class="row top-buffer">
+        <search-box></search-box>
     </div>
     <div class="row top-buffer">
-        <div class=" col-md-4 searchresult">Search results for "Prince"</div>
+        <search-result></search-result>
     </div>
 
     <div class="row top-buffer">
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="row top-buffer">
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail tile tile-medium tile-teal">
-                <a href="#">
-                    <img src="/img/prince.jpg">
-                    <!--<h1>Hello</h1>-->
-                </a>
-            </div>
-        </div>
+
+        <album-tile ng-repeat="item in albumList"></album-tile>
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="row top-buffer">&ndash;&gt;-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
+        <!--<album-tile></album-tile>-->
     </div>
 
 
@@ -159,66 +81,20 @@
                 </tbody>
             </table>
         </div>
-        <!--<div class="col-md-2">-->
-        <!--<div class="thumbnail tile tile-medium tile-teal">-->
-        <!--<a href="#">-->
-        <!--<img src="/img/prince.jpg">-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<table class="col-md-4 table table-striped">-->
-        <!--<thead>-->
-        <!--<tr>-->
-        <!--<th>#</th>-->
-        <!--<th>Title</th>-->
-        <!--<th>Artist</th>-->
-        <!--<th>Time</th>-->
-        <!--<th>Released</th>-->
-
-        <!--</tr>-->
-        <!--</thead>-->
-        <!--<tbody>-->
-        <!--<tr>-->
-        <!--<td>1</td>-->
-        <!--<td>Planet Earth</td>-->
-        <!--<td>Prince</td>-->
-        <!--<td>4:34</td>-->
-        <!--<td>2011</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>2</td>-->
-        <!--<td>Planet Earth</td>-->
-        <!--<td>Prince</td>-->
-        <!--<td>4:34</td>-->
-        <!--<td>2011</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>3</td>-->
-        <!--<td>Planet Earth</td>-->
-        <!--<td>Prince</td>-->
-        <!--<td>4:34</td>-->
-        <!--<td>2011</td>-->
-        <!--</tr>-->
-        <!--</tbody>-->
-        <!--</table>-->
     </div>
 </div>
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-
 <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-
-<!--<script src="/bower_components/devbridge-autocomplete/dist/jquery.autocomplete.js"></script>-->
-<!--<script src="/bower_components/typeahead.js/dist/bloodhound.js"></script>-->
-<!--<script src="/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>-->
-<!--<script src="/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>-->
 <script src="/lib/angular/angular.js"></script>
 <script src="/lib/angular/angular-route.min.js"></script>
-<script type="text/javascript" src="/bower_components/auto/script/app.js"></script>
 <script src="/bower_components/angular-livesearch-master/liveSearch.js"></script>
 <script src="/js/app.js"></script>
 <script src="/js/controllers/tidal-controller.js"></script>
 <script src="/js/directives/directives.js"></script>
+<script src="/js/directives/search-box-directive.js"></script>
+<script src="/js/directives/search-result-directive.js"></script>
+<script src="/js/directives/album-tile-directive.js"></script>
 
 
 </body>
