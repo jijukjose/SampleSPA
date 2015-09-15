@@ -20,7 +20,7 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAl
     $scope.searchAlbumsOfSelectedArtist = function(){
         if(angular.isDefined($scope.selectedArtist)){
             alert("Searching albums for "+ $scope.selectedArtist);
-//            searchAlbumsService(selectedArtist);
+            searchAlbumsService($scope.selectedArtist);
 
         }
     };
