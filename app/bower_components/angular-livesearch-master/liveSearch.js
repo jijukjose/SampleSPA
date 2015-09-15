@@ -12,7 +12,8 @@ angular.module("LiveSearch", ["ng"])
             liveSearchItemTemplate: '@',
             liveSearchWaitTimeout: '=?',
             liveSearchMaxResultSize: '=?',
-            liveSearchMaxlength: '=?'
+            liveSearchMaxlength: '=?',
+            ngModel: "="
         },
         template: "<input type='text' />",
         link: function (scope, element, attrs, controller) {

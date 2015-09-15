@@ -1,9 +1,10 @@
 <div>
     <live-search id="search1" type="text"
-                 live-search-callback="mySearchCallback"
-                 ng-model="mySearch" class="col-md-11 searchbox">
+                 data-live-search-callback="mySearchCallback"
+                 data-ng-model="mySearch" data-live-search-select="selectedArtist" class="col-md-11 searchbox">
     </live-search>
 
+    <!--TODO: can be transluded-->
     <span class="col-md-offset-1 col-md-2">
             <button type="button" class="btn btn-primary btn-xl">SEARCH</button>
     </span>

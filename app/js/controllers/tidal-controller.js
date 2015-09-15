@@ -1,21 +1,22 @@
 
-tidalApp.controller("tidalCtrl", function($scope, $http, $q, $window) {
+tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, $window) {
     $scope.albumList=[{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8},{id:9},{id:10}];
 
     $scope.mySearch = "";
 
-    $scope.mySearchCallback = function(params) {
-        var defer = $q.defer();
-
-        $http.jsonp("http://gd.geobytes.com/AutoCompleteCity?callback=JSON_CALLBACK&q=" + params.query)
-            .success(function(response) {
-                defer.resolve(response);
-            });
-
-        return defer.promise;
+    $scope.mySearchCallback = function(params){
+        return searchArtistsService(params.query);
     };
+//    $scope.selected=function(a,b){
+//        if(angular.isDefined(a) || angular.isDefined(b)){
+//            alert(a+"_"+b);
+//        }
+//    }
+    $scope.$watch('selectedArtist',function(old,newer){
+        alert(old+"_"+newer);
+    })
 });
 
 function callback(response, status) {
-    console.log(status);
-};
+    alert(response+"_"+status);
+}
