@@ -56,5 +56,18 @@
 <script src="/js/services/search-albums-services.js"></script>
 
 
+<div id="dz-root"></div>
+
+<script src="/js/dz/dz.js"></script>
+<script>
+    DZ.init({
+        appId  : '164475',
+        channelUrl : 'http://localhost:8000'
+    });
+    DZ.api('/user/5', function(response){
+        console.log("Name of user id 5", response);
+    });
+</script>
+
 </body>
 </html>

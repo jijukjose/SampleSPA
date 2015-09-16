@@ -16,6 +16,11 @@ angular.module("LiveSearch", ["ng"])
             selectedItem: "="
         },
         template: "<input type='text' />",
+        controller:function($scope){
+            console.log($scope.liveSearchMaxResultSize);
+            console.log($scope.liveSearchMaxlength);
+
+        },
         link: function (scope, element, attrs, controller) {
             var timeout;
 
