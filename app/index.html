@@ -15,11 +15,14 @@
     </div>
     <div class="search-buffer">
         <search-result></search-result>
+        </br>
+        <hr class="hrline" ng-if="searchAlbumsVisible">
+        <!--<hr class="hrline">-->
     </div>
 
-    <div ng-if="searchAlbumsVisible" class="row top-buffer">
+    <div ng-if="searchAlbumsVisible" class="row">
         <div class="col-md-10">
-            <div class="album-text album-buffer">Albums</div>
+            <div class="album-text album-buffer">ALBUMS</div>
             <album-tile ng-repeat="item in albumList"></album-tile>
         </div>
     </div>

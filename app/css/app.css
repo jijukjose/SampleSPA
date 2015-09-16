@@ -1,6 +1,6 @@
 .top-buffer { margin-top:70px; }
 .search-buffer { margin-top:60px; }
-.album-buffer { margin-top:30px; }
+.album-buffer { margin-top:10px; }
 
 .searchbox {
     height:60px !important;
@@ -14,6 +14,22 @@
     margin-left: 25px;
     border:none;
 
+}
+.searchresult{
+    font-size: 30px;
+    /*margin-left: 10px;*/
+    font-family: oblique serif !important;
+    color: white;
+
+
+}
+.hrline {
+    margin-top:30px;
+    height: .05% !important;
+    border-color: #2E2E2E !important;
+    /*border-color: #1C1C1C !important;*/
+    width: 82%;
+    margin-left: 10px;
 }
 #live-search {
     /*position: relative;*/
@@ -34,14 +50,7 @@
 
 }
 
-.searchresult{
-    font-size: 30px;
-    /*margin-left: 10px;*/
-    font-family: oblique serif !important;
-    color: white;
 
-
-}
 *:focus {
     outline: 0;
 }
