@@ -32,7 +32,7 @@ tidalApp.factory('searchPlayListService', function ($http, $q) {
         var url = "/album/"+albumSelected.albumId;
         DZ.api(url, function (response) {
             if (response && response.release_date) {
-                playList.release_date = response.release_date;
+                playList.release_date = response.release_date.substring(0,4);
             }
             defer.resolve(playList);
         });

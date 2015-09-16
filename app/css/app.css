@@ -3,14 +3,69 @@
 .searchbox {
     height:60px !important;
     background-color:#2a2a2a !important;
-    border: 0px none !important;
-    border-radius: 3px !important;
+    color: #808080;
+    /*border: 0px none !important;*/
+    /*border-radius: 3px !important;*/
     font-size: 18px !important;
     width : 680px !important;
-    padding-top: 0px !important;
-    color: #808080;
+    /*padding-top: 0px !important;*/
+
+    border:none;
 
 }
+*:focus {
+    outline: 0;
+}
+/*Live Search styles start*/
+#live-search {
+    position: relative;
+    top: 30%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    vertical-align: middle;
+    /*color: green;*//*TODO No use*/
+}
+ul.searchresultspopup {
+    /*border: #a4bed4 1px solid;*/
+    margin-top: 0px;
+    padding: 0px;
+    /*z-index: 1 !important;*/
+    position: absolute;
+    background-color: #2a2a2a !important;
+    color: #808080;
+
+    /*max-height:200px;*/
+    border-collapse: separate;
+    /*overflow-y: hidden;*/
+
+}
+
+ul.searchresultspopup > li {
+    cursor: pointer;
+    padding-left: 1px;
+    text-align: left;
+    list-style: none;
+    line-height: 20px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-transform: lowercase;
+}
+
+ul.searchresultspopup li.selected, ul.searchresultspopup li:hover {
+    background-color: #d0e9c6;
+}
+
+ul.searchresultspopup b {
+    color: red; /*TODO No use*/
+}
+
+ul.searchresultspopup strong {
+    color: green;/*TODO No use*/
+}
+/*Live Search styles end*/
+
 .tt-menu {
     top: 0px !important;
     /*position: relative !important;*/
@@ -54,16 +109,19 @@
     background: no-repeat center top;background-size:cover;
 
 }
-.tidal-table {
+/*.tidal-table {*/
     /*width: 300px;*/
     /*float:left;*/
-}
+ /**/
+/*}*/
 
 .table-hover tbody tr:hover  {
     background-color: #d0e9c6 !important;
 }
 .table-hover tbody tr {
-    background-color:grey !important;
+    /*background-color:grey !important;*/
+    background-color:#2a2a2a !important;
+    color: #808080;
 }
 
 input
@@ -84,51 +142,5 @@ input
 /*color: grey !important;*/
 
 /*}*/
-#live-search {
-    position: relative;
-    top: 30%;
-    left: 25%;
-    right: 25%;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-}
 
-/*Live Search styles start*/
-ul.searchresultspopup {
-    border: #a4bed4 1px solid;
-    margin-top: 0px;
-    padding: 0px;
-    z-index: 1 !important;
-    position: fixed;
-    background-color: lightgray !important;
-    /*max-height:200px;*/
-    border-collapse: separate;
-    overflow-y: hidden;
-    color: black !important; /*Color of the list font*/
-}
 
-ul.searchresultspopup > li {
-    cursor: pointer;
-    padding-left: 1px;
-    text-align: left;
-    list-style: none;
-    line-height: 20px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    text-transform: lowercase;
-}
-
-ul.searchresultspopup li.selected, ul.searchresultspopup li:hover {
-    background-color: #d0e9c6;
-}
-
-ul.searchresultspopup b {
-    color: blue;
-}
-
-ul.searchresultspopup strong {
-    color: green;
-}
-/*Live Search styles end*/

@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('searchAlbumsService', function( $http, $q, ArtistNameToIdMapping){
+tidalApp.factory('searchAlbumsService', function( $http, $q, $filter, ArtistNameToIdMapping){
 
     return function (artistsName) {
         var defer = $q.defer();
@@ -21,11 +21,12 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, ArtistNameToIdMappi
 
     function constructListOfArtistsFromResponse(data) {
         var albumsList = [];
+
         angular.forEach(data, function (item) {
             albumsList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link,
             albumId:item.album.id});
         });
-        return albumsList;
+        return $filter('unique')(albumsList,"title");
     }
 
 });
