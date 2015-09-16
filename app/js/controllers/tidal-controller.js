@@ -22,7 +22,7 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAl
     };
 
     $scope.displayPlayList = function(item) {
-        searchPlayListService(item.albumId).then(function(response){
+        searchPlayListService(item).then(function(response){
             $scope.playList = response;
         });
     };

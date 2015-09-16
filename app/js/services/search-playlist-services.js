@@ -7,36 +7,42 @@
  */
 
 tidalApp.factory('searchPlayListService', function ($http, $q) {
-    return function (albumId) {
+    var albumSelected;
+    var id = 0;
+    return function (album) {
+
         var defer = $q.defer();
+        albumSelected = album;
+        id = 0;
         /*TODO: move this to a constant service or filter ...*/
         https://api.deezer.com/album/1130967/tracks
-        var url = "/album/"+albumId+"/tracks";
+        var url = "/album/"+albumSelected.albumId+"/tracks";
         DZ.api(url, function (response) {
             if (response && response.data && response.data.length > 0) {
                 fillReleasedDate(constructListOfArtistsFromResponse(response.data)).then(function(response){
-                    $q.resolve(response);
+                    defer.resolve(response);
                 });
             }
         });
         return defer.promise;
     };
 
-    function fillReleasedDate() {
+    function fillReleasedDate(playList) {
         var defer = $q.defer();
-        var url = "/album/"+albumId;
+        var url = "/album/"+albumSelected.albumId;
         DZ.api(url, function (response) {
-            if (response && response.data && response.data.length > 0) {
-                defer.resolve(constructListOfArtistsFromResponse(response.data));
+            if (response && response.release_date) {
+                playList.release_date = response.release_date;
             }
+            defer.resolve(playList);
         });
         return defer.promise;
     }
 
     function constructListOfArtistsFromResponse(data) {
-        var playList = {data:[], release_date:null};
+        var playList = {data:[], release_date:null, image:albumSelected.cover };
         angular.forEach(data, function (item) {
-            playList.data.push({title: 1, artist: 2, time: 3, released: null, image: 5 });
+            playList.data.push({id:++id,title: item.title, artist: item.artist.name, time: item.duration/*TODO filter*/});
         });
         return playList;
     }
