@@ -117,7 +117,7 @@ ul.searchresultspopup strong {
 
 
 .outer {
-    background-color: #151515 !important
+    background-color: #151515 !important;
 
 }
 
@@ -140,7 +140,8 @@ ul.searchresultspopup strong {
  /**/
 /*}*/
 table,th, tr {
-    border: none;
+    border: none !important;
+    line-height: 1px !important;
 }
 
 .table-hover tbody tr:hover  {
@@ -150,6 +151,20 @@ table,th, tr {
     /*background-color:grey !important;*/
     background-color:#2a2a2a !important;
     color: #808080;
+}
+/*tr:first-child {*/
+    /*border-top: none !important;*/
+/*}*/
+/*tr:last-child {*/
+    /*border-bottom: none !important;*/
+/*}*/
+thead{
+    border-bottom-color: transparent !important;
+
+}
+tr:first-child{
+    border-top-color: transparent !important;
+
 }
 
 input
