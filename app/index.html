@@ -18,24 +18,9 @@
     </div>
 
     <div ng-if="searchAlbumsVisible" class="row top-buffer">
-
         <album-tile ng-repeat="item in albumList"></album-tile>
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="row top-buffer">&ndash;&gt;-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
-        <!--<album-tile></album-tile>-->
     </div>
-
-
-
-    <div ng-if="searchAlbumsVisible" class="row top-buffer">
+    <div id="album_table" ng-if="searchAlbumsVisible" class="row top-buffer">
         <album-table></album-table>
     </div>
 </div>
@@ -54,6 +39,7 @@
 <script src="/js/directives/album-table-directive.js"></script>
 <script src="/js/services/search-artists-services.js"></script>
 <script src="/js/services/search-albums-services.js"></script>
+<script src="/js/services/search-playlist-services.js"></script>
 <script src="/js/services/name-to-id-mapping-services.js"></script>
 
 

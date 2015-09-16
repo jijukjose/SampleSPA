@@ -1,4 +1,4 @@
-<div>
+<div ng-if="playList">
     <div class="col-md-2">
         <div class="thumbnail tile tile-medium tile-teal">
             <a href="#">
@@ -20,26 +20,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr ng-repeat="item in playList">
                 <td>1</td>
-                <td>Planet Earth</td>
-                <td>Prince</td>
-                <td>4:34</td>
-                <td>2011</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Planet Earth</td>
-                <td>Prince</td>
-                <td>4:34</td>
-                <td>2011</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Planet Earth</td>
-                <td>Prince</td>
-                <td>4:34</td>
-                <td>2011</td>
+                <td>{{item.title}}</td>
+                <td>{{item.artist}}</td>
+                <td>{{item.time}}</td>
+                <td>{{item.released}}</td>
             </tr>
             </tbody>
         </table>

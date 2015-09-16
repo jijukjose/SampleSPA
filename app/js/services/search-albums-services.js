@@ -12,7 +12,6 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, ArtistNameToIdMappi
         var defer = $q.defer();
         var url = "/artist/" + ArtistNameToIdMapping[artistsName] + "/top?limit=15";
         DZ.api(url, function (response) {
-//            console.log(response);
             if (response && response.data && response.data.length > 0) {
                 defer.resolve(constructListOfArtistsFromResponse(response.data));
             }
@@ -23,9 +22,9 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, ArtistNameToIdMappi
     function constructListOfArtistsFromResponse(data) {
         var artistList = [];
         angular.forEach(data, function (item) {
-            artistList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link});
+            artistList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link,
+            albumId:item.album.id});
         });
-//        console.log(artistList);
         return artistList;
     }
 
