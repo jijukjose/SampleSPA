@@ -538,15 +538,15 @@
       <changelist id="29df57b2-3a7c-411e-85b9-7a8a1c46fce7" name="Default" comment="" />
       <created>1442256722326</created>
       <updated>1442256722326</updated>
-      <workItem from="1442398285583" duration="24113000" />
+      <workItem from="1442398285583" duration="24213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43990000" />
+    <option name="totallyTimeSpent" value="44090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
