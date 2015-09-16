@@ -122,7 +122,8 @@ angular.module("LiveSearch", ["ng"])
                     var promise = scope.liveSearchCallback.call(null, { query: search_string });
                     promise.then(function (dataArray) {
                         if (dataArray) {
-                            results = dataArray.slice(0, (scope.liveSearchMaxResultSize || 20) - 1);
+//                            results = dataArray.slice(0, (scope.liveSearchMaxResultSize || 20) - 1);
+                            results = angular.copy(dataArray);
                         }
                         scope.visible = true;
                     });

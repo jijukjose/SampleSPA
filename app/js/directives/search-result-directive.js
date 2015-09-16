@@ -2,7 +2,7 @@ tidalApp.directive('searchResult', function () {
 
     return {
         restrict: 'E',
-        template: '<div class=" col-md-4 searchresult">Search results for "Prince"</div>',
+        template: '<div ng-if="searchAlbumsVisible" class=" col-md-7 searchresult">Search results for {{selectedArtist}}</div>',
         controller: function () {
         }
     };

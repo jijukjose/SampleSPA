@@ -51,7 +51,7 @@
     height: 150px !important;
     width: 150px;
     /*background: url(/img/prince.jpg) no-repeat center top;background-size:cover;*/
-    background: url(/img/prince.jpg) no-repeat center top;background-size:cover;
+    background: no-repeat center top;background-size:cover;
 
 }
 .tidal-table {
@@ -85,7 +85,7 @@ input
 
 /*}*/
 #live-search {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 25%;
     right: 25%;

@@ -1,0 +1,1 @@
+tidalApp.value('ArtistNameToIdMapping', {});
