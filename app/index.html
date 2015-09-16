@@ -18,7 +18,9 @@
     </div>
 
     <div ng-if="searchAlbumsVisible" class="row top-buffer">
-        <album-tile ng-repeat="item in albumList"></album-tile>
+        <div class="col-md-10">
+            <album-tile ng-repeat="item in albumList"></album-tile>
+        </div>
     </div>
     <div id="album_table" ng-if="playList"class="row top-buffer">
         <album-table></album-table>
@@ -27,6 +29,7 @@
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/lodash/lodash.js"></script>
 <script src="/lib/angular/angular.js"></script>
 <script src="/lib/angular/angular-route.min.js"></script>
 <script src="/bower_components/angular-livesearch-master/liveSearch.js"></script>

@@ -2,18 +2,18 @@
 tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAlbumsService, searchPlayListService) {
 
     $scope.searchAlbumsVisible = false;
-
-    $scope.albumList=[];
-
+    $scope.playList=[];
     $scope.mySearch = "";
+    $scope.currentArtistSearched="";
 
     $scope.mySearchCallback = function(params){
-        $scope.searchAlbumsVisible = false;
         return searchArtistsService(params.query);
     };
 
     $scope.searchAlbumsOfSelectedArtist = function(){
         $scope.searchAlbumsVisible = true;
+        $scope.currentArtistSearched = $scope.selectedArtist;
+        $scope.playList=[];
         if(angular.isDefined($scope.selectedArtist)){
             searchAlbumsService($scope.selectedArtist).then(function(response){
                 $scope.albumList = response;

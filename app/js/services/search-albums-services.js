@@ -20,12 +20,12 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, ArtistNameToIdMappi
     };
 
     function constructListOfArtistsFromResponse(data) {
-        var artistList = [];
+        var albumsList = [];
         angular.forEach(data, function (item) {
-            artistList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link,
+            albumsList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link,
             albumId:item.album.id});
         });
-        return artistList;
+        return albumsList;
     }
 
 });
