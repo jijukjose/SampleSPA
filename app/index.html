@@ -13,12 +13,13 @@
     <div class="row top-buffer">
         <search-box></search-box>
     </div>
-    <div class="row top-buffer">
+    <div class="search-buffer">
         <search-result></search-result>
     </div>
 
     <div ng-if="searchAlbumsVisible" class="row top-buffer">
         <div class="col-md-10">
+            <div class="album-text album-buffer">Albums</div>
             <album-tile ng-repeat="item in albumList"></album-tile>
         </div>
     </div>
