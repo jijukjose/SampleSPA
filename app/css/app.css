@@ -139,6 +139,9 @@ ul.searchresultspopup strong {
     /*float:left;*/
  /**/
 /*}*/
+table,th, tr {
+    border: none;
+}
 
 .table-hover tbody tr:hover  {
     background-color: #d0e9c6 !important;
