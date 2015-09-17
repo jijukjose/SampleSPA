@@ -59,10 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="10" selection-start="3903" selection-end="3903" vertical-scroll-proportion="-8.12">
+            <state line="16" column="60" selection-start="252" selection-end="252" vertical-scroll-proportion="0.5042017">
               <folding />
             </state>
           </provider>
@@ -86,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album-table.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="album-table.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="19" selection-start="730" selection-end="730" vertical-scroll-proportion="0.5660377">
+            <state line="12" column="58" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/app/js/services/search-artists-services.js" />
         <option value="$PROJECT_DIR$/app/js/services/search-playlist-services.js" />
         <option value="$PROJECT_DIR$/app/bower_components/bootstrap/less/tables.less" />
-        <option value="$PROJECT_DIR$/app/css/app.css" />
         <option value="$PROJECT_DIR$/app/js/directives/template/album-table.html" />
+        <option value="$PROJECT_DIR$/app/css/app.css" />
       </list>
     </option>
   </component>
@@ -878,16 +878,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/app.css">
+    <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="10" selection-start="3903" selection-end="3903" vertical-scroll-proportion="-8.12">
+        <state line="12" column="58" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-table.html">
+    <entry file="file://$PROJECT_DIR$/app/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="730" selection-end="730" vertical-scroll-proportion="0.5660377">
+        <state line="16" column="60" selection-start="252" selection-end="252" vertical-scroll-proportion="0.5042017">
           <folding />
         </state>
       </provider>
