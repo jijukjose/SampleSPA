@@ -62,7 +62,7 @@
       <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="62" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.6785714">
+            <state line="155" column="17" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.36344537">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,16 @@
       <file leaf-file-name="album-table.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="236" selection-end="247" vertical-scroll-proportion="-3.75">
+            <state line="23" column="87" selection-start="993" selection-end="993" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="34" selection-start="829" selection-end="846" vertical-scroll-proportion="-10.708333">
               <folding />
             </state>
           </provider>
@@ -120,7 +129,6 @@
         <option value="$PROJECT_DIR$/app/js/directives/album-tile-directive.js" />
         <option value="$PROJECT_DIR$/app/js/directives/template/album-tile.html" />
         <option value="$PROJECT_DIR$/app/js/controllers/tidal-controller.js" />
-        <option value="$PROJECT_DIR$/app/js/directives/template/album-table.html" />
         <option value="$PROJECT_DIR$/app/js/directives/search-result-directive.js" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/js/services/deezer-api-services.js" />
@@ -129,6 +137,7 @@
         <option value="$PROJECT_DIR$/app/js/services/other-services.js" />
         <option value="$PROJECT_DIR$/app/js/services/search-artists-services.js" />
         <option value="$PROJECT_DIR$/app/js/services/search-playlist-services.js" />
+        <option value="$PROJECT_DIR$/app/js/directives/template/album-table.html" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
       </list>
     </option>
@@ -757,13 +766,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/js/directives/template/search-box.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers/tidal-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="83" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
@@ -820,13 +822,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="86" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.6850117">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services/name-to-id-mapping-services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -853,16 +848,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-tile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="353" selection-end="461" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="34" selection-start="829" selection-end="846" vertical-scroll-proportion="-10.708333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/directives/template/album-table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="236" selection-end="247" vertical-scroll-proportion="-3.75">
+        <state line="23" column="87" selection-start="993" selection-end="993" vertical-scroll-proportion="-14.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="62" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.6785714">
+        <state line="155" column="17" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.36344537">
           <folding />
         </state>
       </provider>

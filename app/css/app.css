@@ -152,6 +152,10 @@ ul.searchresultspopup strong {
 .selected-title {
 
 }
+.table-list { /*Jiju the table for the playlist*/
+    margin-top: 30px;!important;
+
+}
 /*.tidal-table {*/
    /*margin-left: 70px;*/
 /*}*/
