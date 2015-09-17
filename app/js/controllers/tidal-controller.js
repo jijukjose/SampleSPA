@@ -6,6 +6,7 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAl
     $scope.mySearch = "";
     $scope.currentArtistSearched="";
 
+
     $scope.mySearchCallback = function(params){
         return searchArtistsService(params.query);
     };

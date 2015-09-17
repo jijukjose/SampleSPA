@@ -1,9 +1,10 @@
 <div class="col-md-2">
-    <div class="thumbnail tile tile-medium tile-teal">
+    <div class="thumbnail tile tile-medium tile-teal" ng-mouseenter="hover = true"
+         ng-mouseleave="hover = false">
 <!--TODO: Use filters-->
         <a href="">
             <img ng-src={{item.cover}} ng-click="displayPlayList(item)">
-            <div class="album-name">Prince</div>
+            <div class="album-name"  ng-class="{albumhover: hover}">Album {{item.id}}</div>
         </a>
     </div>
 </div>

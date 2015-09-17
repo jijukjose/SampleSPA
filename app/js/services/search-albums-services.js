@@ -8,6 +8,7 @@
 
 tidalApp.factory('searchAlbumsService', function( $http, $q, $filter, ArtistNameToIdMapping){
 
+
     return function (artistsName) {
         var defer = $q.defer();
         var url = "/artist/" + ArtistNameToIdMapping[artistsName] + "/top?limit=15";
@@ -26,7 +27,10 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, $filter, ArtistName
             albumsList.push({artistName: item.artist.name, title: item.album.title, cover: item.album.cover, link: item.link,
             albumId:item.album.id});
         });
-        return $filter('unique')(albumsList,"title");
+        albumsList = $filter('unique')(albumsList,"title");
+        /*TODO move this to the filter*/
+
+        return albumsList;
     }
 
 });
