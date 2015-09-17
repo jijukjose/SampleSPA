@@ -1,9 +1,9 @@
 <div>
     <live-search id="search1" type="text"
-                 data-live-search-callback="searchArtists" data-live-search-max-result-size=100 data-live-search-max-length=50
-                 data-ng-model="mySearch" data-selected-item="selectedArtist" class="col-md-12 searchbox">
-    </live-search>
+                 data-live-search-callback="searchArtists" data-live-search-select-callback="searchAlbumsOfSelectedArtist" data-live-search-max-result-size=100 data-live-search-max-length=50
+                 data-ng-model="search" data-selected-item="selectedArtist" class="col-md-12 searchbox">
+    </live-search>                       ¨
     <span class="col-md-offset-1 col-md-2">
-            <button type="button" class="btn btn-primary btn-xl" ng-click="searchAlbumsOfSelectedArtist()">SEARCH</button>
+            <button type="button" class="btn btn-primary btn-xl">SEARCH</button>
     </span>
 </div>

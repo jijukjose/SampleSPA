@@ -6,8 +6,8 @@ tidalApp.controller("tidalCtrl", function ($scope, searchArtistsService, searchA
 
     $scope.searchAlbumsVisible = false;
     $scope.playList = [];
-    $scope.mySearch = "";
-    $scope.currentArtistSearched = "";
+    $scope.search = "";
+//    $scope.currentArtistSearched = "";
 
 
     $scope.searchArtists = function (params) {
@@ -15,15 +15,18 @@ tidalApp.controller("tidalCtrl", function ($scope, searchArtistsService, searchA
     };
 
 
-    $scope.searchAlbumsOfSelectedArtist = function () {
+    $scope.searchAlbumsOfSelectedArtist = function (item) {
         $scope.searchAlbumsVisible = true;
-        $scope.currentArtistSearched = $scope.selectedArtist;
+//        $scope.currentArtistSearched = item.item;
+        $scope.selectedArtist = item.item;
+//        $scope.mySearch =  item.item;
         $scope.playList = [];
         if (angular.isDefined($scope.selectedArtist)) {
             searchAlbumsService($scope.selectedArtist).then(function (response) {
                 $scope.albumList = response;
             });
         }
+        return   item.item;
     };
 
     $scope.displayPlayList = function (item) {
@@ -35,7 +38,6 @@ tidalApp.controller("tidalCtrl", function ($scope, searchArtistsService, searchA
     };
 
     $scope.shouldDisplayAlbumName = function (item, hover) {
-        console.log(item.id+"_"+hover+"_"+$scope.albumSelected)
         return (hover || $scope.albumSelected === item.id);
     };
 
