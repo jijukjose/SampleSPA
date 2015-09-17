@@ -1,22 +1,24 @@
 /**
  * Created with IntelliJ IDEA.
- * User: efield
+ * User: jiju k jose
  * Date: 9/15/15
  * Time: 9:03 PM
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('deezerService', function($q){
+"use strict";
+tidalApp.provider('deezerServiceProvider', function () {
 
 
-    return function (url) {
-        var defer = $q.defer();
+    this.$get = function ($q) {
+        return function (url) {
+            var defer = $q.defer();
 
-        DZ.api(url, function (response) {
-            defer.resolve(response);
-        });
-        return defer.promise;
+            DZ.api(url, function (response) {
+                defer.resolve(response);
+            });
+            return defer.promise;
+        };
     };
-
 });
 

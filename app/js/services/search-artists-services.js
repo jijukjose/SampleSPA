@@ -6,13 +6,12 @@
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('searchArtistsService', function (deezerService, $q, ArtistNameToIdMapping) {
+tidalApp.factory('searchArtistsService', function (deezerServiceProvider, $q, ArtistNameToIdMapping) {
 
     return function (artistsName) {
         var defer = $q.defer();
         var url = "/search?q=artist:" + artistsName;
-        deezerService(url).then(function (response) {
-//            console.log(response);
+        deezerServiceProvider(url).then(function (response) {
             if (response && response.data && response.data.length > 0) {
                 defer.resolve(constructListOfArtistsFromResponse(response.data));
             }
@@ -26,7 +25,6 @@ tidalApp.factory('searchArtistsService', function (deezerService, $q, ArtistName
             artistList.push(item.artist.name);
             ArtistNameToIdMapping[item.artist.name] = item.artist.id;
         });
-//        console.log(artistList);
         return artistList;
     }
 });

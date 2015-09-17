@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('searchPlayListService', function (deezerService, $q) {
+tidalApp.factory('searchPlayListService', function (deezerServiceProvider, $q) {
     var albumSelected;
 
     return function (album) {
@@ -17,7 +17,7 @@ tidalApp.factory('searchPlayListService', function (deezerService, $q) {
         /*TODO: move this to a constant service or filter ...*/
 
         var url = "/album/"+albumSelected.albumId+"/tracks";
-        deezerService(url).then(function (response) {
+        deezerServiceProvider(url).then(function (response) {
             if (response && response.data && response.data.length > 0) {
                 fillReleasedDate(constructListOfArtistsFromResponse(response.data)).then(function(response){
                     defer.resolve(response);
@@ -30,7 +30,7 @@ tidalApp.factory('searchPlayListService', function (deezerService, $q) {
     function fillReleasedDate(playList) {
         var defer = $q.defer();
         var url = "/album/"+albumSelected.albumId;
-        deezerService(url).then(function (response) {
+        deezerServiceProvider(url).then(function (response) {
             if (response && response.release_date) {
                 playList.release_date = response.release_date.substring(0,4);
             }

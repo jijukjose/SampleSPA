@@ -3,7 +3,8 @@
          ng-mouseleave="hover = false" ng-click="displayPlayList(item)">
         <a href="">
             <img ng-src={{item.cover}}>
-            <div class="album-name"  ng-class="{albumhover: shouldDisplayAlbumName(item,hover)}">
+
+            <div class="album-name" ng-class="{albumhover: shouldDisplayAlbumName(item,hover)}">
                 <div ng-show="shouldDisplayAlbumName(item,hover)">
                     {{item.title}}
                 </div>

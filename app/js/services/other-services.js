@@ -19,3 +19,5 @@ tidalApp.filter('unique', function () {
     };
 });
 
+//tidalApp.value('Deezer', DZ);
+

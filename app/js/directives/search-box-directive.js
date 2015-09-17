@@ -1,3 +1,4 @@
+"use strict";
 tidalApp.directive('searchBox', function () {
     return {
         restrict: 'E',

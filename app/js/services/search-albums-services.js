@@ -7,13 +7,13 @@
  */
 
 /*TODO remiove unsed $http*/
-tidalApp.factory('searchAlbumsService', function( deezerService, $q, $filter, ArtistNameToIdMapping){
+tidalApp.factory('searchAlbumsService', function( deezerServiceProvider, $q, $filter, ArtistNameToIdMapping){
 
 
     return function (artistsName) {
         var defer = $q.defer();
         var url = "/artist/" + ArtistNameToIdMapping[artistsName] + "/top?limit=15";
-        deezerService(url).then(function (response) {
+        deezerServiceProvider(url).then(function (response) {
             if (response && response.data && response.data.length > 0) {
                 defer.resolve(constructListOfArtistsFromResponse(response.data));
             }
