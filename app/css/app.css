@@ -165,9 +165,18 @@ ul.searchresultspopup strong {
     /*line-height: 1px !important;*/
 /*}*/
 
-.table-hover tbody tr:hover  {
+.tbody {
     background-color: #585858;   /*Jiju The selector on the playlist table below*/
+    position : absolute;
 }
+.tr:hover {
+    background-color: yellow !important;
+    color: yellow;
+
+}
+.table-hover tr:hover {
+    background-color: transparent !important;  /*Jiju background of the row of the playlist table when hovered*/
+  }
 /*.table-hover tbody tr {*/
     /*background-color:grey !important;*/
     /*background-color:#2a2a2a !important;*/
