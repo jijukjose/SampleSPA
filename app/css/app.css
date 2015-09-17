@@ -46,8 +46,12 @@
     font-family: oblique serif !important;
     margin-left: 10px;
     color: #0ff;
-
-
+}
+.album-name {
+    font-size: 20px;
+    font-family: oblique serif !important;
+    text-align: center;
+    color: #0ff;
 }
 
 
