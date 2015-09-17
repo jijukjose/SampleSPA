@@ -6,12 +6,12 @@
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('searchArtistsService', function ($http, $q, ArtistNameToIdMapping) {
+tidalApp.factory('searchArtistsService', function (deezerService, $q, ArtistNameToIdMapping) {
 
     return function (artistsName) {
         var defer = $q.defer();
         var url = "/search?q=artist:" + artistsName;
-        DZ.api(url, function (response) {
+        deezerService(url).then(function (response) {
 //            console.log(response);
             if (response && response.data && response.data.length > 0) {
                 defer.resolve(constructListOfArtistsFromResponse(response.data));

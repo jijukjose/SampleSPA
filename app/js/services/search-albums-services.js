@@ -6,13 +6,14 @@
  * To change this template use File | Settings | File Templates.
  */
 
-tidalApp.factory('searchAlbumsService', function( $http, $q, $filter, ArtistNameToIdMapping){
+/*TODO remiove unsed $http*/
+tidalApp.factory('searchAlbumsService', function( deezerService, $q, $filter, ArtistNameToIdMapping){
 
 
     return function (artistsName) {
         var defer = $q.defer();
         var url = "/artist/" + ArtistNameToIdMapping[artistsName] + "/top?limit=15";
-        DZ.api(url, function (response) {
+        deezerService(url).then(function (response) {
             if (response && response.data && response.data.length > 0) {
                 defer.resolve(constructListOfArtistsFromResponse(response.data));
             }
@@ -28,7 +29,6 @@ tidalApp.factory('searchAlbumsService', function( $http, $q, $filter, ArtistName
             albumId:item.album.id});
         });
         albumsList = $filter('unique')(albumsList,"title");
-        /*TODO move this to the filter*/
 
         return albumsList;
     }

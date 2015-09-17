@@ -92,10 +92,12 @@ ul.searchresultspopup > li {
     list-style-position: outside;
     list-style-type: none;
     text-transform: lowercase;
+    border-top :1px black solid !important;
 }
 
 ul.searchresultspopup li.selected, ul.searchresultspopup li:hover {
-    background-color: #d0e9c6;
+    background-color: #585858;   /*Jiju The selector on the dropdown menu*/
+
 }
 
 ul.searchresultspopup b {
@@ -109,6 +111,8 @@ ul.searchresultspopup strong {
 
 .tt-menu {
     top: 0px !important;
+    border-style: ridge;
+    border-color: #000000;
     /*position: relative !important;*/
 }
 
@@ -134,9 +138,9 @@ ul.searchresultspopup strong {
 
 
 
-.tile.tile-medium {
+/*.tile.tile-medium {*/
 
-}
+/*}*/
 .tile.tile-teal {
     background-color: #00aba9;
     height: 150px !important;
@@ -148,47 +152,47 @@ ul.searchresultspopup strong {
 .selected-title {
 
 }
-.tidal-table {
-   margin-left: 70px;
-}
-table,th, tr {
-    border: none !important;
-    line-height: 1px !important;
-}
+/*.tidal-table {*/
+   /*margin-left: 70px;*/
+/*}*/
+
+/*table,th, tr {*/
+    /*border: none !important;*/
+    /*line-height: 1px !important;*/
+/*}*/
 
 .table-hover tbody tr:hover  {
-    background-color: #d0e9c6 !important;
+    background-color: #585858;   /*Jiju The selector on the playlist table below*/
 }
-.table-hover tbody tr {
+/*.table-hover tbody tr {*/
     /*background-color:grey !important;*/
-    background-color:#2a2a2a !important;
-    color: #808080;
-}
+    /*background-color:#2a2a2a !important;*/
+    /*color: #808080;*/
+/*}*/
 /*tr:first-child {*/
     /*border-top: none !important;*/
 /*}*/
 /*tr:last-child {*/
     /*border-bottom: none !important;*/
 /*}*/
-thead{
-    border-bottom-color: transparent !important;
+/*thead{*/
+    /*border-bottom-color: transparent !important;*/
 
-}
-tr:first-child{
-    border-top-color: transparent !important;
+/*}*/
+/*tr:first-child{*/
+    /*border-top-color: transparent !important;*/
 
-}
+/*}*/
 
-input
-{
-    width: 50%;
-    top: 25%;
-    height: 30px;
-
-}
+/*input*/
+/*{*/
+    /*width: 50%;*/
+    /*top: 25%;*/
+    /*height: 30px;*/
+/*}*/
 
 .thumbnail {
-    border: none !important;
+    border: none !important;    /*Jiju This is to avoid the border of the album tiles in the album list and the pic in he playlist*/
 }
 /*.searchbox {*/
 /*height:60px !important;*/
