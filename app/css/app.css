@@ -105,7 +105,7 @@ ul.searchresultspopup b {
 }
 
 ul.searchresultspopup strong {
-    color: green;/*TODO No use*/
+    /*color: green;*//*TODO No use*/
 }
 /*Live Search styles end*/
 
@@ -156,14 +156,24 @@ ul.searchresultspopup strong {
     margin-top: 30px;!important;
 
 }
-/*.tidal-table {*/
-   /*margin-left: 70px;*/
-/*}*/
 
-/*table,th, tr {*/
-    /*border: none !important;*/
-    /*line-height: 1px !important;*/
-/*}*/
+.table-row {
+    border-top:thin solid !important;
+    border-bottom:thin solid !important;
+    border-color:black !important;
+}
+ .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td, .table > tfoot > tr > td {
+    /*padding: 8px;*/
+    /*line-height: 1.42857143;*/
+    /*vertical-align: top;*/
+    border-top-color: grey !important;
+    border-top: 1px solid !important;
+    border-bottom: none !important;
+}
+.table > thead > tr > th {
+    border-top: none !important;
+    border-bottom: none !important;
+}
 
 .tbody {
     background-color: #585858;   /*Jiju The selector on the playlist table below*/
@@ -172,7 +182,6 @@ ul.searchresultspopup strong {
 .tr:hover {
     background-color: yellow !important;
     color: yellow;
-
 }
 .table-hover tr:hover {
     background-color: transparent !important;  /*Jiju background of the row of the playlist table when hovered*/
