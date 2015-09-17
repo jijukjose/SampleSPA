@@ -23,10 +23,16 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAl
     };
 
     $scope.displayPlayList = function(item) {
+        $scope.albumSelected = item.id;
         searchPlayListService(item).then(function(response){
             $scope.playList = response;
         });
     };
+
+    $scope.shouldDisplayAlbumName = function(item, hover) {
+       return (hover || $scope.albumSelected===item.id);
+    };
+
 
 
 });

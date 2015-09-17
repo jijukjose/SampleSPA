@@ -56,10 +56,10 @@
 
 
 .albumhover {
-    font-size: 20px;
+    font-size: 15px;
     font-family: oblique serif !important;
     text-align: center;
-    color: green;
+    color: white;
 }
 
 *:focus {
@@ -143,6 +143,7 @@ ul.searchresultspopup strong {
     width: 150px;
     /*background: url(/img/prince.jpg) no-repeat center top;background-size:cover;*/
     background: no-repeat center top;background-size:cover;
+    position:relative;
 
 }
 /*.tidal-table {*/
