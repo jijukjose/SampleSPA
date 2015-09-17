@@ -183,6 +183,12 @@ ul.searchresultspopup strong {
     background-color: #2a2a2a !important;
 }
 
+.pic-position {
+    position: absolute !important;
+    top: 0 !important;
+    left:30px !important;
+}
+
 .tbody {
     background-color: #585858;   /*Jiju The selector on the playlist table below*/
     position : absolute;
