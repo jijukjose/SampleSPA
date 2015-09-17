@@ -166,7 +166,7 @@ ul.searchresultspopup strong {
     /*padding: 8px;*/
     /*line-height: 1.42857143;*/
     /*vertical-align: top;*/
-    border-top-color: grey !important;
+    border-top-color: black !important;  /*the lines on the table*/
     border-top: 1px solid !important;
     border-bottom: none !important;
 }
@@ -175,13 +175,21 @@ ul.searchresultspopup strong {
     border-bottom: none !important;
 }
 
+.table-shift {
+    padding-left: 200px !important;
+}
+
+.table-bg{
+    background-color: #2a2a2a !important;
+}
+
 .tbody {
     background-color: #585858;   /*Jiju The selector on the playlist table below*/
     position : absolute;
 }
 .tr:hover {
-    background-color: yellow !important;
-    color: yellow;
+    background-color: #2a2a2a !important;
+    color: #2a2a2a;
 }
 .table-hover tr:hover {
     background-color: transparent !important;  /*Jiju background of the row of the playlist table when hovered*/

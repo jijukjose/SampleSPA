@@ -1,29 +1,29 @@
 <div>
-    <div class="col-md-2 albumhover">
-        <img class="thumbnail tile tile-medium tile-teal selected-title" ng-src={{playList.image}}>
-        {{titleSelected}}
-    </div>
-    <div class="col-md-7">
-        <div class="album-text">
+    <!--<div class="col-md-2 albumhover">-->
+        <!--<img class="thumbnail tile tile-medium tile-teal selected-title" ng-src={{playList.image}}>-->
+        <!--{{titleSelected}}-->
+    <!--</div>-->
+    <div class="col-md-10">
+        <div class="album-text table-shift">
             {{titleSelected}}
         </div>
         <table class="table table-hover table-list" data-toggle="table">
             <thead>
             <tr>
-                <th><font color="white">#</font></th>
-                <th><font color="white">Title</font></th>
-                <th><font color="white">Artist</font></th>
-                <th><font color="white">Time</font></th>
-                <th><font color="white">Released</font></th>
+                <th class="table-shift table-bg"><font color="white">#</font></th>
+                <th class="table-bg"><font color="white">Title</font></th>
+                <th class="table-bg"><font color="white">Artist</font></th>
+                <th class="table-bg"><font color="white">Time</font></th>
+                <th class="table-bg"><font color="white">Released</font></th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="item in playList.data">
-                <td table-row><font color="white">{{item.id}}</font></td>
-                <td table-row><font color="white">{{item.title}}</font></td>
-                <td table-row><font color="white">{{item.artist}}</font></td>
-                <td table-row><font color="white">{{item.time}}</font></td>
-                <td table-row><font color="white">{{playList.release_date}}</font></td>
+                <td class="table-shift table-bg"><font color="white">{{item.id}}</font></td>
+                <td class="table-bg"><font color="white">{{item.title}}</font></td>
+                <td class="table-bg"><font color="white">{{item.artist}}</font></td>
+                <td class="table-bg"><font color="white">{{item.time}}</font></td>
+                <td class="table-bg"><font color="white">{{playList.release_date}}</font></td>
             </tr>
             </tbody>
         </table>
