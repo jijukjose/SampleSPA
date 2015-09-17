@@ -8,12 +8,12 @@
 
 tidalApp.factory('searchPlayListService', function ($http, $q) {
     var albumSelected;
-    var id = 0;
+
     return function (album) {
 
         var defer = $q.defer();
         albumSelected = album;
-        id = 0;
+
         /*TODO: move this to a constant service or filter ...*/
         https://api.deezer.com/album/1130967/tracks
         var url = "/album/"+albumSelected.albumId+"/tracks";
@@ -40,6 +40,7 @@ tidalApp.factory('searchPlayListService', function ($http, $q) {
     }
 
     function constructListOfArtistsFromResponse(data) {
+        var id = 0;
         var playList = {data:[], release_date:null, image:albumSelected.cover };
         angular.forEach(data, function (item) {
             playList.data.push({id:++id,title: item.title, artist: item.artist.name, time: item.duration/*TODO filter*/});

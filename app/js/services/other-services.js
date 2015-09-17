@@ -1,10 +1,10 @@
 
     tidalApp.filter('unique', function() {
-        var idOfTheAlbum=0;
+
         return function(collection, keyname) {
             var output = [],
                 keys = [];
-
+            var idOfTheAlbum=0;
             angular.forEach(collection, function(item) {
                 var key = item[keyname];
                 if(keys.indexOf(key) === -1) {
