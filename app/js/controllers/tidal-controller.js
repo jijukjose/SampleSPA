@@ -35,6 +35,7 @@ tidalApp.controller("tidalCtrl", function ($scope, searchArtistsService, searchA
     };
 
     $scope.shouldDisplayAlbumName = function (item, hover) {
+        console.log(item.id+"_"+hover+"_"+$scope.albumSelected)
         return (hover || $scope.albumSelected === item.id);
     };
 
