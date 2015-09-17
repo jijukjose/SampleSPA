@@ -24,6 +24,7 @@ tidalApp.controller("tidalCtrl", function($scope, searchArtistsService, searchAl
 
     $scope.displayPlayList = function(item) {
         $scope.albumSelected = item.id;
+        $scope.titleSelected = item.title;
         searchPlayListService(item).then(function(response){
             $scope.playList = response;
         });

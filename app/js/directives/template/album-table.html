@@ -1,13 +1,9 @@
 <div>
-    <div class="col-md-2">
-        <div class="thumbnail tile tile-medium tile-teal">
-            <a href="">
-                <img src={{playList.image}}>
-                <!--<h1>Hello</h1>-->
-            </a>
-        </div>
+    <div class="col-md-2 albumhover">
+        <img class="thumbnail tile tile-medium tile-teal selected-title" ng-src={{playList.image}}>
+        {{titleSelected}}
     </div>
-    <div class="col-md-8">
+    <div class="col-md-7">
         <table class="table table-hover" data-toggle="table">
             <thead>
             <tr>

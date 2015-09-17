@@ -1,6 +1,6 @@
-.top-buffer { margin-top:70px; }
-.search-buffer { margin-top:60px; }
-.album-buffer { margin-top:10px; }
+.top-buffer { margin-top:10%; }
+.search-buffer { margin-top:5%; }
+.album-buffer { margin-top:1%; }
 
 .searchbox {
     height:60px !important;
@@ -8,8 +8,8 @@
     color: #808080;
     /*border: 0px none !important;*/
     /*border-radius: 3px !important;*/
-    font-size: 18px !important;
-    width : 680px !important;
+    font-size: 150% !important;
+    width : 60% !important;
     /*padding-top: 0px !important;*/
     margin-left: 25px;
     border:none;
@@ -48,7 +48,7 @@
     color: #0ff;
 }
 .album-name {
-    font-size: 20px;
+    font-size: 16px;
     font-family: oblique serif !important;
     text-align: center;
     color: #0ff;
@@ -56,7 +56,7 @@
 
 
 .albumhover {
-    font-size: 15px;
+    font-size: 19px;
     font-family: oblique serif !important;
     text-align: center;
     color: white;
@@ -144,13 +144,13 @@ ul.searchresultspopup strong {
     /*background: url(/img/prince.jpg) no-repeat center top;background-size:cover;*/
     background: no-repeat center top;background-size:cover;
     position:relative;
+}
+.selected-title {
 
 }
-/*.tidal-table {*/
-    /*width: 300px;*/
-    /*float:left;*/
- /**/
-/*}*/
+.tidal-table {
+   margin-left: 70px;
+}
 table,th, tr {
     border: none !important;
     line-height: 1px !important;
