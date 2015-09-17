@@ -1,0 +1,17 @@
+{
+  "author": "Jiju K Jose <jijukjose@gmail.com>",
+  "name": "SampleSPA",
+  "description": "Sample SPA for Tidal",
+  "version": "0.0.1",
+  "homepage": "http://localhost:8000",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jijukjose/SampleSPA.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
