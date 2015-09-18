@@ -104,9 +104,14 @@ ul.searchresultspopup b {
     padding: 18px 28px;
     border-radius: 3px;
     height: 60px;
-    background: #0ff;
-    color: #151515;
+    background: #0ff !important;
+    color: #151515 !important;
     font-size: 16px;
+}
+.button
+{
+
+    color: #151515 !important;
 }
 
 .outer {
